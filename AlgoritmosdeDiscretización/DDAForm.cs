@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -33,7 +34,17 @@ namespace ComputacionGraficaDDA
                 return;
             }
 
+            Stopwatch stopwatch = Stopwatch.StartNew();
+
             pictureBox1.Image = DDAAlgorithm.DrawLine(xStart, yStart, xEnd, yEnd, pictureBox1.Width, pictureBox1.Height, this.Font);
+
+            stopwatch.Stop();
+
+            double elapsedTime = stopwatch.Elapsed.TotalMilliseconds;
+            MessageBox.Show($"Tiempo de ejecución para el algoritmo DDA: {elapsedTime:F2} ms.",
+                            "Tiempo de Ejecución",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
         }
 
         private void button2_Click(object sender, EventArgs e)
