@@ -41,6 +41,8 @@ namespace ComputacionGraficaPuntoMedio
                     return;
                 }
 
+                var stopwatch = System.Diagnostics.Stopwatch.StartNew();
+
                 // Calcular puntos del círculo
                 List<Point> circlePoints = CircleMidpoint.GetCirclePoints(h, k, r, pictureBox1.Width, pictureBox1.Height, scale);
 
@@ -73,6 +75,15 @@ namespace ComputacionGraficaPuntoMedio
 
                 // Mostrar imagen en PictureBox
                 pictureBox1.Image = bmp;
+
+                stopwatch.Stop();
+
+                // Mostrar tiempo de cálculo
+                double elapsedTime = stopwatch.Elapsed.TotalMilliseconds;
+                MessageBox.Show($"Tiempo de ejecución para el algoritmo Punto Medio: {elapsedTime:F2} ms.",
+                                "Tiempo de Ejecución",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
