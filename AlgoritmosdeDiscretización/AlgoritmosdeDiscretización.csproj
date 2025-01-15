@@ -46,6 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CircleMidpoint.cs" />
+    <Compile Include="CircleMidpointForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CircleMidpointForm.Designer.cs">
+      <DependentUpon>CircleMidpointForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DDA.cs" />
+    <Compile Include="DDAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDAForm.Designer.cs">
+      <DependentUpon>DDAForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDiagonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +87,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relleno.cs" />
+    <EmbeddedResource Include="CircleMidpointForm.resx">
+      <DependentUpon>CircleMidpointForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDAForm.resx">
+      <DependentUpon>DDAForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDiagonal.resx">
       <DependentUpon>frmDiagonal.cs</DependentUpon>
     </EmbeddedResource>

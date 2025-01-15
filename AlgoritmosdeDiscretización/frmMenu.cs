@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ComputacionGraficaDDA;
+using ComputacionGraficaPuntoMedio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,6 +38,20 @@ namespace AlgoritmosdeDiscretización
             frmDiagonal diagonal = new frmDiagonal();
             diagonal.MdiParent = this;
             diagonal.Show();
+        }
+
+        private void dDAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DDAForm ddaform = new DDAForm();
+            ddaform.MdiParent = this;
+            ddaform.Show();
+        }
+
+        private void puntoMedioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CircleMidpointForm midpointform = new CircleMidpointForm();
+            midpointform.MdiParent = this;
+            midpointform.Show();
         }
     }
 }
