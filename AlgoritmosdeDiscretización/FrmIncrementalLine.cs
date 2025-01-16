@@ -17,6 +17,7 @@ namespace AlgoritmosdeDiscretización
         public FrmIncrementalLine()
         {
             InitializeComponent();
+            initialize();
         }
 
         public static FrmIncrementalLine Instance()
@@ -26,10 +27,21 @@ namespace AlgoritmosdeDiscretización
             return _instance;
         }
 
+        private void initialize()
+        {
+            nudX1.Maximum = picCanvas.Width; nudX2.Maximum = picCanvas.Width;
+            nudY1.Maximum = picCanvas.Height; nudY2.Maximum = picCanvas.Height;
+        }
+
         private void btnDraw_Click(object sender, EventArgs e)
         {
             incrementalLine.ReadData(nudX1, nudY1, nudX2, nudY2);
             incrementalLine.Draw(picCanvas);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

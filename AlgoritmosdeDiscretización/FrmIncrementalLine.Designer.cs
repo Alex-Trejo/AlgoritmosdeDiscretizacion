@@ -40,6 +40,7 @@
             this.picCanvas = new System.Windows.Forms.PictureBox();
             this.grbProcess = new System.Windows.Forms.GroupBox();
             this.btnDraw = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.grbInput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudY2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudX2)).BeginInit();
@@ -142,6 +143,7 @@
             // 
             // grbProcess
             // 
+            this.grbProcess.Controls.Add(this.btnExit);
             this.grbProcess.Controls.Add(this.btnDraw);
             this.grbProcess.Location = new System.Drawing.Point(12, 284);
             this.grbProcess.Name = "grbProcess";
@@ -152,13 +154,23 @@
             // 
             // btnDraw
             // 
-            this.btnDraw.Location = new System.Drawing.Point(84, 70);
+            this.btnDraw.Location = new System.Drawing.Point(39, 71);
             this.btnDraw.Name = "btnDraw";
             this.btnDraw.Size = new System.Drawing.Size(75, 23);
             this.btnDraw.TabIndex = 0;
             this.btnDraw.Text = "Draw";
             this.btnDraw.UseVisualStyleBackColor = true;
             this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(150, 71);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FrmIncrementalLine
             // 
@@ -201,5 +213,6 @@
         private System.Windows.Forms.PictureBox picCanvas;
         private System.Windows.Forms.GroupBox grbProcess;
         private System.Windows.Forms.Button btnDraw;
+        private System.Windows.Forms.Button btnExit;
     }
 }

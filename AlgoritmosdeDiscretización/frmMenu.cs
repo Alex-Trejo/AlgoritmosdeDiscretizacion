@@ -56,16 +56,18 @@ namespace AlgoritmosdeDiscretización
 
         private void bresenhamToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmBresenhamLine bresenham = new FrmBresenhamLine();
+            FrmBresenhamLine bresenham = FrmBresenhamLine.Instance();
             bresenham.MdiParent = this;
             bresenham.Show();
+            bresenham.Focus();
         }
 
         private void incrementalGeneralizadaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmIncrementalLine incremental = new FrmIncrementalLine();
+            FrmIncrementalLine incremental = FrmIncrementalLine.Instance();
             incremental.MdiParent = this;
             incremental.Show();
+            incremental.Focus();
         }
     }
 }
