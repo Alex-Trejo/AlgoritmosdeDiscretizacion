@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BresenhamCircumference.cs" />
     <Compile Include="BresenhamLine.cs" />
     <Compile Include="CircleMidpoint.cs" />
     <Compile Include="CircleMidpointForm.cs">
@@ -55,17 +56,30 @@
       <DependentUpon>CircleMidpointForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DDA.cs" />
+    <Compile Include="DDACircumference.cs" />
     <Compile Include="DDAForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DDAForm.Designer.cs">
       <DependentUpon>DDAForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBresenhamCircumference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBresenhamCircumference.Designer.cs">
+      <DependentUpon>FrmBresenhamCircumference.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBresenhamLine.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmBresenhamLine.Designer.cs">
       <DependentUpon>FrmBresenhamLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDDACircumference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDDACircumference.Designer.cs">
+      <DependentUpon>FrmDDACircumference.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDiagonal.cs">
       <SubType>Form</SubType>
@@ -107,8 +121,14 @@
     <EmbeddedResource Include="DDAForm.resx">
       <DependentUpon>DDAForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBresenhamCircumference.resx">
+      <DependentUpon>FrmBresenhamCircumference.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBresenhamLine.resx">
       <DependentUpon>FrmBresenhamLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDDACircumference.resx">
+      <DependentUpon>FrmDDACircumference.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDiagonal.resx">
       <DependentUpon>frmDiagonal.cs</DependentUpon>
@@ -146,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

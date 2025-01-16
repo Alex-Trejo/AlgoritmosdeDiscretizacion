@@ -31,5 +31,10 @@ namespace AlgoritmosdeDiscretización
             bresenham.ReadData(nudX1, nudY1, nudX2, nudY2);
             bresenham.Draw(picCanvas);
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
