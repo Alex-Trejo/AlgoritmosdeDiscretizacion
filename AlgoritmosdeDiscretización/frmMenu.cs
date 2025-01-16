@@ -53,5 +53,19 @@ namespace AlgoritmosdeDiscretización
             midpointform.MdiParent = this;
             midpointform.Show();
         }
+
+        private void bresenhamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBresenhamLine bresenham = new FrmBresenhamLine();
+            bresenham.MdiParent = this;
+            bresenham.Show();
+        }
+
+        private void incrementalGeneralizadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmIncrementalLine incremental = new FrmIncrementalLine();
+            incremental.MdiParent = this;
+            incremental.Show();
+        }
     }
 }

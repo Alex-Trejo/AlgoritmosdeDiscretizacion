@@ -34,9 +34,11 @@
             this.zigZagToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diagonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.líneasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.circunferenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.circunferenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.puntoMedioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bresenhamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.incrementalGeneralizadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,10 +88,19 @@
             // líneasToolStripMenuItem
             // 
             this.líneasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dDAToolStripMenuItem});
+            this.dDAToolStripMenuItem,
+            this.bresenhamToolStripMenuItem,
+            this.incrementalGeneralizadaToolStripMenuItem});
             this.líneasToolStripMenuItem.Name = "líneasToolStripMenuItem";
             this.líneasToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.líneasToolStripMenuItem.Text = "Líneas";
+            // 
+            // dDAToolStripMenuItem
+            // 
+            this.dDAToolStripMenuItem.Name = "dDAToolStripMenuItem";
+            this.dDAToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.dDAToolStripMenuItem.Text = "DDA";
+            this.dDAToolStripMenuItem.Click += new System.EventHandler(this.dDAToolStripMenuItem_Click);
             // 
             // circunferenciasToolStripMenuItem
             // 
@@ -99,19 +110,26 @@
             this.circunferenciasToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.circunferenciasToolStripMenuItem.Text = "Circunferencias";
             // 
-            // dDAToolStripMenuItem
-            // 
-            this.dDAToolStripMenuItem.Name = "dDAToolStripMenuItem";
-            this.dDAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dDAToolStripMenuItem.Text = "DDA";
-            this.dDAToolStripMenuItem.Click += new System.EventHandler(this.dDAToolStripMenuItem_Click);
-            // 
             // puntoMedioToolStripMenuItem
             // 
             this.puntoMedioToolStripMenuItem.Name = "puntoMedioToolStripMenuItem";
-            this.puntoMedioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.puntoMedioToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.puntoMedioToolStripMenuItem.Text = "Punto Medio";
             this.puntoMedioToolStripMenuItem.Click += new System.EventHandler(this.puntoMedioToolStripMenuItem_Click);
+            // 
+            // bresenhamToolStripMenuItem
+            // 
+            this.bresenhamToolStripMenuItem.Name = "bresenhamToolStripMenuItem";
+            this.bresenhamToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.bresenhamToolStripMenuItem.Text = "Bresenham";
+            this.bresenhamToolStripMenuItem.Click += new System.EventHandler(this.bresenhamToolStripMenuItem_Click);
+            // 
+            // incrementalGeneralizadaToolStripMenuItem
+            // 
+            this.incrementalGeneralizadaToolStripMenuItem.Name = "incrementalGeneralizadaToolStripMenuItem";
+            this.incrementalGeneralizadaToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.incrementalGeneralizadaToolStripMenuItem.Text = "Incremental Generalizada";
+            this.incrementalGeneralizadaToolStripMenuItem.Click += new System.EventHandler(this.incrementalGeneralizadaToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -122,6 +140,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "frmMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenu";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -141,5 +160,7 @@
         private System.Windows.Forms.ToolStripMenuItem dDAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem circunferenciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem puntoMedioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bresenhamToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem incrementalGeneralizadaToolStripMenuItem;
     }
 }
