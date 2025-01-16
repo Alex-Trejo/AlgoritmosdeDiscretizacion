@@ -41,11 +41,7 @@ namespace AlgoritmosdeDiscretización
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             this.Hide();
-=======
-            this.Close();
->>>>>>> f5630672465b05e574c2326415810fdbe58b2a62
         }
     }
 }
