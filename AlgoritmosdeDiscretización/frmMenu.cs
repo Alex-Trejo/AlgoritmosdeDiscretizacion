@@ -60,6 +60,7 @@ namespace AlgoritmosdeDiscretización
             bresenham.MdiParent = this;
             bresenham.Show();
             bresenham.Focus();
+
         }
 
         private void incrementalGeneralizadaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,6 +69,33 @@ namespace AlgoritmosdeDiscretización
             incremental.MdiParent = this;
             incremental.Show();
             incremental.Focus();
+
+        }
+
+        private void bresenhamToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //FrmBresenhamCircumference frmBresenhamCircumference = new FrmBresenhamCircumference();
+            //frmBresenhamCircumference.MdiParent = this;
+            //frmBresenhamCircumference.Show();
+            FrmBresenhamCircumference frm = FormManager.GetFrmBresenhamCircumference();
+            frm.MdiParent = this; // Si usas MDI.
+            frm.StartPosition = FormStartPosition.Manual;
+            frm.Location = new Point(0, 0);
+            frm.Show();
+
+            frm.BringToFront(); // Lo trae al frente si ya está abierto.
+        }
+
+        private void dDACircunferenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDDACircumference frm = FormManager.GetFrmDDACircumference();
+            frm.MdiParent = this; // Si usas MDI.
+            frm.StartPosition = FormStartPosition.Manual;
+            frm.Location = new Point(0, 0);
+            frm.Show();
+
+            frm.BringToFront(); // Lo trae al frente si ya está abierto.
+
         }
     }
 }

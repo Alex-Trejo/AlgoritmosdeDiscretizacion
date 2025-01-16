@@ -59,56 +59,74 @@
             this.grbInput.Controls.Add(this.nudX1);
             this.grbInput.Controls.Add(this.label2);
             this.grbInput.Controls.Add(this.label1);
-            this.grbInput.Location = new System.Drawing.Point(12, 69);
+            this.grbInput.Location = new System.Drawing.Point(16, 85);
+            this.grbInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grbInput.Name = "grbInput";
-            this.grbInput.Size = new System.Drawing.Size(266, 209);
+            this.grbInput.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbInput.Size = new System.Drawing.Size(355, 257);
             this.grbInput.TabIndex = 14;
             this.grbInput.TabStop = false;
             this.grbInput.Text = "Input";
             // 
             // nudY2
             // 
-            this.nudY2.Location = new System.Drawing.Point(150, 149);
+            this.nudY2.Location = new System.Drawing.Point(200, 183);
+            this.nudY2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nudY2.Name = "nudY2";
-            this.nudY2.Size = new System.Drawing.Size(77, 20);
+            this.nudY2.Size = new System.Drawing.Size(103, 22);
             this.nudY2.TabIndex = 5;
             // 
             // nudX2
             // 
-            this.nudX2.Location = new System.Drawing.Point(39, 149);
+            this.nudX2.Location = new System.Drawing.Point(52, 183);
+            this.nudX2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nudX2.Name = "nudX2";
-            this.nudX2.Size = new System.Drawing.Size(77, 20);
+            this.nudX2.Size = new System.Drawing.Size(103, 22);
             this.nudX2.TabIndex = 4;
             // 
             // nudY1
             // 
-            this.nudY1.Location = new System.Drawing.Point(150, 53);
+            this.nudY1.Location = new System.Drawing.Point(200, 65);
+            this.nudY1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudY1.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
             this.nudY1.Name = "nudY1";
-            this.nudY1.Size = new System.Drawing.Size(77, 20);
+            this.nudY1.Size = new System.Drawing.Size(103, 22);
             this.nudY1.TabIndex = 3;
             // 
             // nudX1
             // 
-            this.nudX1.Location = new System.Drawing.Point(39, 53);
+            this.nudX1.Location = new System.Drawing.Point(52, 65);
+            this.nudX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudX1.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
             this.nudX1.Name = "nudX1";
-            this.nudX1.Size = new System.Drawing.Size(77, 20);
+            this.nudX1.Size = new System.Drawing.Size(103, 22);
             this.nudX1.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 133);
+            this.label2.Location = new System.Drawing.Point(48, 164);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(47, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Point 2";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 36);
+            this.label1.Location = new System.Drawing.Point(48, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(47, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Point 1";
             // 
@@ -116,18 +134,21 @@
             // 
             this.lblAlgorithmLine.AutoSize = true;
             this.lblAlgorithmLine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlgorithmLine.Location = new System.Drawing.Point(104, 31);
+            this.lblAlgorithmLine.Location = new System.Drawing.Point(139, 38);
+            this.lblAlgorithmLine.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAlgorithmLine.Name = "lblAlgorithmLine";
-            this.lblAlgorithmLine.Size = new System.Drawing.Size(80, 17);
+            this.lblAlgorithmLine.Size = new System.Drawing.Size(95, 20);
             this.lblAlgorithmLine.TabIndex = 13;
             this.lblAlgorithmLine.Text = "Bresenham";
             // 
             // grbCanvas
             // 
             this.grbCanvas.Controls.Add(this.picCanvas);
-            this.grbCanvas.Location = new System.Drawing.Point(284, 12);
+            this.grbCanvas.Location = new System.Drawing.Point(379, 15);
+            this.grbCanvas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grbCanvas.Name = "grbCanvas";
-            this.grbCanvas.Size = new System.Drawing.Size(504, 426);
+            this.grbCanvas.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbCanvas.Size = new System.Drawing.Size(672, 524);
             this.grbCanvas.TabIndex = 12;
             this.grbCanvas.TabStop = false;
             this.grbCanvas.Text = "Canvas";
@@ -135,9 +156,10 @@
             // picCanvas
             // 
             this.picCanvas.BackColor = System.Drawing.Color.White;
-            this.picCanvas.Location = new System.Drawing.Point(6, 19);
+            this.picCanvas.Location = new System.Drawing.Point(8, 23);
+            this.picCanvas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(492, 401);
+            this.picCanvas.Size = new System.Drawing.Size(656, 494);
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
             // 
@@ -145,18 +167,25 @@
             // 
             this.grbProcess.Controls.Add(this.btnExit);
             this.grbProcess.Controls.Add(this.btnDraw);
-            this.grbProcess.Location = new System.Drawing.Point(12, 284);
+            this.grbProcess.Location = new System.Drawing.Point(16, 350);
+            this.grbProcess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grbProcess.Name = "grbProcess";
-            this.grbProcess.Size = new System.Drawing.Size(266, 154);
+            this.grbProcess.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grbProcess.Size = new System.Drawing.Size(355, 190);
             this.grbProcess.TabIndex = 11;
             this.grbProcess.TabStop = false;
             this.grbProcess.Text = "Process";
             // 
             // btnDraw
             // 
+<<<<<<< HEAD
             this.btnDraw.Location = new System.Drawing.Point(39, 68);
+=======
+            this.btnDraw.Location = new System.Drawing.Point(112, 86);
+            this.btnDraw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> f5630672465b05e574c2326415810fdbe58b2a62
             this.btnDraw.Name = "btnDraw";
-            this.btnDraw.Size = new System.Drawing.Size(75, 23);
+            this.btnDraw.Size = new System.Drawing.Size(100, 28);
             this.btnDraw.TabIndex = 0;
             this.btnDraw.Text = "Draw";
             this.btnDraw.UseVisualStyleBackColor = true;
@@ -164,24 +193,33 @@
             // 
             // btnExit
             // 
+<<<<<<< HEAD
             this.btnExit.Location = new System.Drawing.Point(150, 68);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
+=======
+            this.btnExit.Location = new System.Drawing.Point(112, 136);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(100, 27);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Cerrar";
+>>>>>>> f5630672465b05e574c2326415810fdbe58b2a62
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FrmBresenhamLine
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.grbInput);
             this.Controls.Add(this.lblAlgorithmLine);
             this.Controls.Add(this.grbCanvas);
             this.Controls.Add(this.grbProcess);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmBresenhamLine";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBresenhamLine";
