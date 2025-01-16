@@ -22,7 +22,7 @@ namespace AlgoritmosdeDiscretización
 
         public static FrmIncrementalLine Instance()
         {
-            if (_instance == null)
+            if (_instance == null || _instance.IsDisposed)
                 _instance = new FrmIncrementalLine();
             return _instance;
         }
@@ -41,7 +41,7 @@ namespace AlgoritmosdeDiscretización
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
     }
 }

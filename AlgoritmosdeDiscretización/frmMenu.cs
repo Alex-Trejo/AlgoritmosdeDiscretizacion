@@ -74,11 +74,8 @@ namespace AlgoritmosdeDiscretización
 
         private void bresenhamToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //FrmBresenhamCircumference frmBresenhamCircumference = new FrmBresenhamCircumference();
-            //frmBresenhamCircumference.MdiParent = this;
-            //frmBresenhamCircumference.Show();
             FrmBresenhamCircumference frm = FormManager.GetFrmBresenhamCircumference();
-            frm.MdiParent = this; // Si usas MDI.
+            frm.MdiParent = this;
             frm.StartPosition = FormStartPosition.Manual;
             frm.Location = new Point(0, 0);
             frm.Show();
@@ -89,7 +86,7 @@ namespace AlgoritmosdeDiscretización
         private void dDACircunferenciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmDDACircumference frm = FormManager.GetFrmDDACircumference();
-            frm.MdiParent = this; // Si usas MDI.
+            frm.MdiParent = this;
             frm.StartPosition = FormStartPosition.Manual;
             frm.Location = new Point(0, 0);
             frm.Show();

@@ -22,7 +22,7 @@ namespace AlgoritmosdeDiscretización
 
         public static FrmBresenhamLine Instance()
         {
-            if (_instance == null)
+            if (_instance == null || _instance.IsDisposed)
                 _instance = new FrmBresenhamLine();
             return _instance;
         }
@@ -41,7 +41,7 @@ namespace AlgoritmosdeDiscretización
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
     }
 }

@@ -30,19 +30,19 @@
         {
             this.lblBersenham = new System.Windows.Forms.Label();
             this.grbInput = new System.Windows.Forms.GroupBox();
+            this.lblYc = new System.Windows.Forms.Label();
+            this.lblXc = new System.Windows.Forms.Label();
             this.nudRadius = new System.Windows.Forms.NumericUpDown();
             this.nudYC = new System.Windows.Forms.NumericUpDown();
             this.nudXC = new System.Windows.Forms.NumericUpDown();
             this.lblRadius = new System.Windows.Forms.Label();
             this.lblInputCenter = new System.Windows.Forms.Label();
             this.grbOtputs = new System.Windows.Forms.GroupBox();
+            this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
             this.grbCanvas = new System.Windows.Forms.GroupBox();
             this.picCanvas = new System.Windows.Forms.PictureBox();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.lblXc = new System.Windows.Forms.Label();
-            this.lblYc = new System.Windows.Forms.Label();
             this.grbInput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRadius)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudYC)).BeginInit();
@@ -56,9 +56,10 @@
             // 
             this.lblBersenham.AutoSize = true;
             this.lblBersenham.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblBersenham.Location = new System.Drawing.Point(240, 26);
+            this.lblBersenham.Location = new System.Drawing.Point(180, 21);
+            this.lblBersenham.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBersenham.Name = "lblBersenham";
-            this.lblBersenham.Size = new System.Drawing.Size(534, 37);
+            this.lblBersenham.Size = new System.Drawing.Size(424, 30);
             this.lblBersenham.TabIndex = 6;
             this.lblBersenham.Text = "Algoritmo Bersenham Circunferencia";
             // 
@@ -73,56 +74,76 @@
             this.grbInput.Controls.Add(this.lblRadius);
             this.grbInput.Controls.Add(this.lblInputCenter);
             this.grbInput.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbInput.Location = new System.Drawing.Point(12, 76);
+            this.grbInput.Location = new System.Drawing.Point(9, 62);
+            this.grbInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbInput.Name = "grbInput";
-            this.grbInput.Size = new System.Drawing.Size(312, 256);
+            this.grbInput.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbInput.Size = new System.Drawing.Size(234, 208);
             this.grbInput.TabIndex = 7;
             this.grbInput.TabStop = false;
             this.grbInput.Text = "Entradas";
             // 
+            // lblYc
+            // 
+            this.lblYc.AutoSize = true;
+            this.lblYc.Location = new System.Drawing.Point(91, 61);
+            this.lblYc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblYc.Name = "lblYc";
+            this.lblYc.Size = new System.Drawing.Size(14, 14);
+            this.lblYc.TabIndex = 8;
+            this.lblYc.Text = "Y";
+            // 
+            // lblXc
+            // 
+            this.lblXc.AutoSize = true;
+            this.lblXc.Location = new System.Drawing.Point(8, 61);
+            this.lblXc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblXc.Name = "lblXc";
+            this.lblXc.Size = new System.Drawing.Size(14, 14);
+            this.lblXc.TabIndex = 7;
+            this.lblXc.Text = "X";
+            // 
             // nudRadius
             // 
             this.nudRadius.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudRadius.Location = new System.Drawing.Point(10, 192);
-            this.nudRadius.Margin = new System.Windows.Forms.Padding(4);
+            this.nudRadius.Location = new System.Drawing.Point(8, 156);
             this.nudRadius.Name = "nudRadius";
-            this.nudRadius.Size = new System.Drawing.Size(103, 24);
+            this.nudRadius.Size = new System.Drawing.Size(77, 21);
             this.nudRadius.TabIndex = 5;
             // 
             // nudYC
             // 
             this.nudYC.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudYC.Location = new System.Drawing.Point(124, 107);
-            this.nudYC.Margin = new System.Windows.Forms.Padding(4);
+            this.nudYC.Location = new System.Drawing.Point(93, 87);
             this.nudYC.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.nudYC.Name = "nudYC";
-            this.nudYC.Size = new System.Drawing.Size(103, 24);
+            this.nudYC.Size = new System.Drawing.Size(77, 21);
             this.nudYC.TabIndex = 4;
             // 
             // nudXC
             // 
             this.nudXC.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudXC.Location = new System.Drawing.Point(7, 107);
-            this.nudXC.Margin = new System.Windows.Forms.Padding(4);
+            this.nudXC.Location = new System.Drawing.Point(5, 87);
             this.nudXC.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
             this.nudXC.Name = "nudXC";
-            this.nudXC.Size = new System.Drawing.Size(103, 24);
+            this.nudXC.Size = new System.Drawing.Size(77, 21);
             this.nudXC.TabIndex = 3;
             // 
             // lblRadius
             // 
             this.lblRadius.AutoSize = true;
-            this.lblRadius.Location = new System.Drawing.Point(10, 158);
+            this.lblRadius.Location = new System.Drawing.Point(8, 128);
+            this.lblRadius.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRadius.Name = "lblRadius";
-            this.lblRadius.Size = new System.Drawing.Size(42, 16);
+            this.lblRadius.Size = new System.Drawing.Size(37, 14);
             this.lblRadius.TabIndex = 1;
             this.lblRadius.Text = "Radio";
             // 
@@ -130,9 +151,10 @@
             // 
             this.lblInputCenter.AutoSize = true;
             this.lblInputCenter.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInputCenter.Location = new System.Drawing.Point(10, 43);
+            this.lblInputCenter.Location = new System.Drawing.Point(8, 35);
+            this.lblInputCenter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInputCenter.Name = "lblInputCenter";
-            this.lblInputCenter.Size = new System.Drawing.Size(163, 16);
+            this.lblInputCenter.Size = new System.Drawing.Size(145, 14);
             this.lblInputCenter.TabIndex = 0;
             this.lblInputCenter.Text = "Centro de la circunferencia";
             // 
@@ -143,19 +165,33 @@
             this.grbOtputs.Controls.Add(this.btnExit);
             this.grbOtputs.Controls.Add(this.btnDraw);
             this.grbOtputs.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbOtputs.Location = new System.Drawing.Point(12, 357);
+            this.grbOtputs.Location = new System.Drawing.Point(9, 290);
+            this.grbOtputs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbOtputs.Name = "grbOtputs";
-            this.grbOtputs.Size = new System.Drawing.Size(312, 196);
+            this.grbOtputs.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbOtputs.Size = new System.Drawing.Size(234, 159);
             this.grbOtputs.TabIndex = 8;
             this.grbOtputs.TabStop = false;
             this.grbOtputs.Text = "Salidas";
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReset.Location = new System.Drawing.Point(74, 58);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 5;
+            this.btnReset.Text = "Limpiar";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Crimson;
-            this.btnExit.Location = new System.Drawing.Point(98, 113);
+            this.btnExit.Location = new System.Drawing.Point(74, 92);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(100, 25);
+            this.btnExit.Size = new System.Drawing.Size(75, 20);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Cerrar";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -164,10 +200,9 @@
             // btnDraw
             // 
             this.btnDraw.BackColor = System.Drawing.Color.Lime;
-            this.btnDraw.Location = new System.Drawing.Point(98, 36);
-            this.btnDraw.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDraw.Location = new System.Drawing.Point(74, 29);
             this.btnDraw.Name = "btnDraw";
-            this.btnDraw.Size = new System.Drawing.Size(100, 28);
+            this.btnDraw.Size = new System.Drawing.Size(75, 23);
             this.btnDraw.TabIndex = 3;
             this.btnDraw.Text = "Graficar";
             this.btnDraw.UseVisualStyleBackColor = false;
@@ -177,9 +212,11 @@
             // 
             this.grbCanvas.BackColor = System.Drawing.Color.Gainsboro;
             this.grbCanvas.Controls.Add(this.picCanvas);
-            this.grbCanvas.Location = new System.Drawing.Point(339, 76);
+            this.grbCanvas.Location = new System.Drawing.Point(254, 62);
+            this.grbCanvas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbCanvas.Name = "grbCanvas";
-            this.grbCanvas.Size = new System.Drawing.Size(541, 477);
+            this.grbCanvas.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbCanvas.Size = new System.Drawing.Size(406, 388);
             this.grbCanvas.TabIndex = 9;
             this.grbCanvas.TabStop = false;
             this.grbCanvas.Text = "Canvas";
@@ -187,53 +224,25 @@
             // picCanvas
             // 
             this.picCanvas.BackColor = System.Drawing.Color.White;
-            this.picCanvas.Location = new System.Drawing.Point(16, 22);
-            this.picCanvas.Margin = new System.Windows.Forms.Padding(4);
+            this.picCanvas.Location = new System.Drawing.Point(12, 18);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(518, 435);
+            this.picCanvas.Size = new System.Drawing.Size(388, 353);
             this.picCanvas.TabIndex = 1;
             this.picCanvas.TabStop = false;
             // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReset.Location = new System.Drawing.Point(98, 72);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(100, 28);
-            this.btnReset.TabIndex = 5;
-            this.btnReset.Text = "Limpiar";
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // lblXc
-            // 
-            this.lblXc.AutoSize = true;
-            this.lblXc.Location = new System.Drawing.Point(10, 75);
-            this.lblXc.Name = "lblXc";
-            this.lblXc.Size = new System.Drawing.Size(16, 16);
-            this.lblXc.TabIndex = 7;
-            this.lblXc.Text = "X";
-            // 
-            // lblYc
-            // 
-            this.lblYc.AutoSize = true;
-            this.lblYc.Location = new System.Drawing.Point(121, 75);
-            this.lblYc.Name = "lblYc";
-            this.lblYc.Size = new System.Drawing.Size(15, 16);
-            this.lblYc.TabIndex = 8;
-            this.lblYc.Text = "Y";
-            // 
             // FrmBresenhamCircumference
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 594);
+            this.ClientSize = new System.Drawing.Size(685, 483);
             this.Controls.Add(this.grbCanvas);
             this.Controls.Add(this.grbOtputs);
             this.Controls.Add(this.grbInput);
             this.Controls.Add(this.lblBersenham);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmBresenhamCircumference";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBresenhamCircumference";
             this.grbInput.ResumeLayout(false);
             this.grbInput.PerformLayout();

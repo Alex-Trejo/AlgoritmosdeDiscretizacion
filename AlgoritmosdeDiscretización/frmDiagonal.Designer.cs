@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.grbProccess = new System.Windows.Forms.GroupBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnDraw = new System.Windows.Forms.Button();
             this.grbCanva = new System.Windows.Forms.GroupBox();
             this.picCanva = new System.Windows.Forms.PictureBox();
-            this.btnDraw = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.grbProccess.SuspendLayout();
             this.grbCanva.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanva)).BeginInit();
@@ -50,6 +50,36 @@
             this.grbProccess.TabIndex = 0;
             this.grbProccess.TabStop = false;
             this.grbProccess.Text = "Procesos";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(78, 93);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "Salir";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(137, 48);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 1;
+            this.btnReset.Text = "Limpiar";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnDraw
+            // 
+            this.btnDraw.Location = new System.Drawing.Point(22, 31);
+            this.btnDraw.Name = "btnDraw";
+            this.btnDraw.Size = new System.Drawing.Size(75, 56);
+            this.btnDraw.TabIndex = 0;
+            this.btnDraw.Text = "Dibujar y Rellenar";
+            this.btnDraw.UseVisualStyleBackColor = true;
+            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
             // grbCanva
             // 
@@ -70,36 +100,6 @@
             this.picCanva.TabIndex = 0;
             this.picCanva.TabStop = false;
             // 
-            // btnDraw
-            // 
-            this.btnDraw.Location = new System.Drawing.Point(22, 31);
-            this.btnDraw.Name = "btnDraw";
-            this.btnDraw.Size = new System.Drawing.Size(75, 56);
-            this.btnDraw.TabIndex = 0;
-            this.btnDraw.Text = "Dibujar y Rellenar";
-            this.btnDraw.UseVisualStyleBackColor = true;
-            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(137, 48);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
-            this.btnReset.TabIndex = 1;
-            this.btnReset.Text = "Limpiar";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(78, 93);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Salir";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // frmDiagonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,7 +107,9 @@
             this.ClientSize = new System.Drawing.Size(807, 466);
             this.Controls.Add(this.grbCanva);
             this.Controls.Add(this.grbProccess);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDiagonal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diagonal";
             this.Load += new System.EventHandler(this.frmDiagonal_Load);
             this.grbProccess.ResumeLayout(false);
