@@ -86,7 +86,8 @@ namespace AlgoritmosdeDiscretización
             {
                 // Conectar cada punto con el siguiente
                 Console.WriteLine($"x: {points[i].X}, y: {points[i].Y}");
-                g.DrawLine(Pens.Black, points[i].X, points[i].Y, points[i + 1].X, points[i + 1].Y);
+                //g.DrawLine(Pens.Black, points[i].X, points[i].Y, points[i + 1].X, points[i + 1].Y);
+                g.FillRectangle(Brushes.Black, points[i].X, points[i].Y, 1, 1);
             }
         }
     }
